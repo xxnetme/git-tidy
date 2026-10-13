@@ -1,0 +1,48 @@
+{
+  "name": "git-tidy",
+  "version": "1.0.0",
+  "description": "Zero-dependency CLI tool to prune merged & stale git branches, clean dangling refs, and optimize git repositories",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "git-tidy": "./bin/git-tidy.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxnetme/git-tidy.git"
+  },
+  "keywords": [
+    "git",
+    "prune",
+    "branch",
+    "git-branch",
+    "tidy",
+    "cleanup",
+    "cli",
+    "developer-tools"
+  ],
+  "author": "xxnetme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xxnetme/git-tidy/issues"
+  },
+  "homepage": "https://github.com/xxnetme/git-tidy#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3"
+  }
+}
